@@ -64,7 +64,17 @@ Methods
 
 ## Questions
 - What is object-oriented programming?
+Object oriented programming is programming based on classes and objects. A class acts as the blueprint for an object. Whatever methods/variables are defined in the blueprint it will be in every single instance of the object thats created. An example of this would be nodes in a linked list.
 - What is a constructor? What do we use it for? What happens when we don't define one?
+A constructor in Java is a special method that is called when an object is created. This method has no return type and it's usually used to set up an object’s initial values or perform any necessary setup tasks. If you don’t define any constructors in your class it just initializes the the object’s fields to null.
 - What is the generic syntax for a method header in Java?
-- What is the difference between *public* and *private*?
+The generic syntax for a method header in Java looks like:
+[access_modifer ][return_type][method_name][parameters][throw exception]{
+method body
+}
+- What is the difference between public and private?
+The difference between public and private modifiers is when another class inherits the characteristics of another class, the private variables/methods inside of that inherited class are not inherited by it's subclass.
 - How would I use Math.random() to get a random integer from 1 to 10?
+Math.random() generates a random number between 0 and 1. Therefore the way to get a random integer from 1 to 10 would be by multiplying the result of Math.random. One way you can do this is:
+int Number = Math.random() * 10
+
